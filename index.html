@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produit Publicitaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Promo Été : T-shirt Personnalisé</h1>
+            <div id="cart">
+                🛒 <span id="cart-count">0</span> article(s)
+            </div>
+        </header>
+
+        <main class="product">
+            <img src="https://via.placeholder.com/400x400?text=T-shirt+Promo" alt="T-shirt publicitaire">
+            <div class="product-info">
+                <h2>T-shirt Publicitaire</h2>
+                <p>Offrez à vos clients un T-shirt personnalisé à l’image de votre marque ! Idéal pour les événements et les campagnes marketing.</p>
+                <p class="price">Prix : 14,99 €</p>
+                <button onclick="ajouterAuPanier()">Ajouter au panier</button>
+                <p id="confirmation" class="hidden">Produit ajouté au panier ! ✅</p>
+            </div>
+        </main>
+
+        <section class="contact-form">
+            <h2>Contactez-nous</h2>
+            <form id="contactForm">
+                <label>Nom :
+                    <input type="text" name="nom" required>
+                </label>
+                <label>Email :
+                    <input type="email" name="email" required>
+                </label>
+                <label>Message :
+                    <textarea name="message" required></textarea>
+                </label>
+                <button type="submit">Envoyer</button>
+                <p id="form-confirmation" class="hidden">Message envoyé avec succès ! ✅</p>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 VotreEntreprise. Tous droits réservés.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
